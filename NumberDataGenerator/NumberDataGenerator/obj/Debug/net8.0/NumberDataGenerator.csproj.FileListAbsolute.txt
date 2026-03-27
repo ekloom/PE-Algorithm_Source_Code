@@ -1,0 +1,14 @@
+C:\Users\elija\Desktop\School\NumberDataGenerator\bin\Debug\net8.0\NumberDataGenerator.exe
+C:\Users\elija\Desktop\School\NumberDataGenerator\bin\Debug\net8.0\NumberDataGenerator.deps.json
+C:\Users\elija\Desktop\School\NumberDataGenerator\bin\Debug\net8.0\NumberDataGenerator.runtimeconfig.json
+C:\Users\elija\Desktop\School\NumberDataGenerator\bin\Debug\net8.0\NumberDataGenerator.dll
+C:\Users\elija\Desktop\School\NumberDataGenerator\bin\Debug\net8.0\NumberDataGenerator.pdb
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\NumberDataGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\NumberDataGenerator.AssemblyInfoInputs.cache
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\NumberDataGenerator.AssemblyInfo.cs
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\NumberDataGenerator.csproj.CoreCompileInputs.cache
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\NumberDataGenerator.dll
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\refint\NumberDataGenerator.dll
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\NumberDataGenerator.pdb
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\NumberDataGenerator.genruntimeconfig.cache
+C:\Users\elija\Desktop\School\NumberDataGenerator\obj\Debug\net8.0\ref\NumberDataGenerator.dll

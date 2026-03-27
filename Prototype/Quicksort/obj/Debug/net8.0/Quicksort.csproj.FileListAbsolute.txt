@@ -1,0 +1,28 @@
+C:\Users\elija\Desktop\School\Quicksort\bin\Debug\net8.0\Quicksort.exe
+C:\Users\elija\Desktop\School\Quicksort\bin\Debug\net8.0\Quicksort.deps.json
+C:\Users\elija\Desktop\School\Quicksort\bin\Debug\net8.0\Quicksort.runtimeconfig.json
+C:\Users\elija\Desktop\School\Quicksort\bin\Debug\net8.0\Quicksort.dll
+C:\Users\elija\Desktop\School\Quicksort\bin\Debug\net8.0\Quicksort.pdb
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\Quicksort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\Quicksort.AssemblyInfoInputs.cache
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\Quicksort.AssemblyInfo.cs
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\Quicksort.csproj.CoreCompileInputs.cache
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\Quicksort.dll
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\refint\Quicksort.dll
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\Quicksort.pdb
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\Quicksort.genruntimeconfig.cache
+C:\Users\elija\Desktop\School\Quicksort\obj\Debug\net8.0\ref\Quicksort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\bin\Debug\net8.0\Quicksort.exe
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\bin\Debug\net8.0\Quicksort.deps.json
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\bin\Debug\net8.0\Quicksort.runtimeconfig.json
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\bin\Debug\net8.0\Quicksort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\bin\Debug\net8.0\Quicksort.pdb
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\Quicksort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\Quicksort.AssemblyInfoInputs.cache
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\Quicksort.AssemblyInfo.cs
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\Quicksort.csproj.CoreCompileInputs.cache
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\Quicksort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\refint\Quicksort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\Quicksort.pdb
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\Quicksort.genruntimeconfig.cache
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Quicksort\obj\Debug\net8.0\ref\Quicksort.dll

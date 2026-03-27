@@ -1,0 +1,162 @@
+Benchmark results for python - mergesort - Sorted
+=========================================
+===== Sorted | Sorted_10K =====
+Peak Memory: 10824 KB
+Run 1:
+Mergesort algorithm ended in: 0.013516725999579648 seconds
+
+Run 2:
+Mergesort algorithm ended in: 0.01430138999967312 seconds
+
+Run 3:
+Mergesort algorithm ended in: 0.015689410999584652 seconds
+
+Run 4:
+Mergesort algorithm ended in: 0.010034082999482052 seconds
+
+Run 5:
+Mergesort algorithm ended in: 0.009280686999773025 seconds
+
+Run 6:
+Mergesort algorithm ended in: 0.01318195600015315 seconds
+
+Run 7:
+Mergesort algorithm ended in: 0.007987316000253486 seconds
+
+Run 8:
+Mergesort algorithm ended in: 0.0095877029998519 seconds
+
+Run 9:
+Mergesort algorithm ended in: 0.01603751699985878 seconds
+
+Run 10:
+Mergesort algorithm ended in: 0.00919786199938244 seconds
+
+===== Sorted | Sorted_50K =====
+Peak Memory: 15104 KB
+Run 1:
+Mergesort algorithm ended in: 0.05365937799979292 seconds
+
+Run 2:
+Mergesort algorithm ended in: 0.05324484900029347 seconds
+
+Run 3:
+Mergesort algorithm ended in: 0.05306373999974312 seconds
+
+Run 4:
+Mergesort algorithm ended in: 0.05392863499946543 seconds
+
+Run 5:
+Mergesort algorithm ended in: 0.05617523199998686 seconds
+
+Run 6:
+Mergesort algorithm ended in: 0.06217275000017253 seconds
+
+Run 7:
+Mergesort algorithm ended in: 0.0542301250006858 seconds
+
+Run 8:
+Mergesort algorithm ended in: 0.05706703899977583 seconds
+
+Run 9:
+Mergesort algorithm ended in: 0.059669532000043546 seconds
+
+Run 10:
+Mergesort algorithm ended in: 0.054890183000679826 seconds
+
+===== Sorted | Sorted_100K =====
+Peak Memory: 20428 KB
+Run 1:
+Mergesort algorithm ended in: 0.114183860000594 seconds
+
+Run 2:
+Mergesort algorithm ended in: 0.114798769999652 seconds
+
+Run 3:
+Mergesort algorithm ended in: 0.11762869199992565 seconds
+
+Run 4:
+Mergesort algorithm ended in: 0.12416148699958285 seconds
+
+Run 5:
+Mergesort algorithm ended in: 0.11855354299950704 seconds
+
+Run 6:
+Mergesort algorithm ended in: 0.12186782500066329 seconds
+
+Run 7:
+Mergesort algorithm ended in: 0.12620391200016456 seconds
+
+Run 8:
+Mergesort algorithm ended in: 0.12484438299998146 seconds
+
+Run 9:
+Mergesort algorithm ended in: 0.11500642899954983 seconds
+
+Run 10:
+Mergesort algorithm ended in: 0.11589925899988884 seconds
+
+===== Sorted | Sorted_500K =====
+Peak Memory: 60536 KB
+Run 1:
+Mergesort algorithm ended in: 0.6642861230002381 seconds
+
+Run 2:
+Mergesort algorithm ended in: 0.6719712269996307 seconds
+
+Run 3:
+Mergesort algorithm ended in: 0.6684155740003916 seconds
+
+Run 4:
+Mergesort algorithm ended in: 0.7419350780000968 seconds
+
+Run 5:
+Mergesort algorithm ended in: 0.6518204140002126 seconds
+
+Run 6:
+Mergesort algorithm ended in: 0.6515756689996124 seconds
+
+Run 7:
+Mergesort algorithm ended in: 0.6539233200001036 seconds
+
+Run 8:
+Mergesort algorithm ended in: 0.6691541119998874 seconds
+
+Run 9:
+Mergesort algorithm ended in: 0.670559310000499 seconds
+
+Run 10:
+Mergesort algorithm ended in: 0.6606899580001482 seconds
+
+===== Sorted | Sorted_1M =====
+Peak Memory: 111476 KB
+Run 1:
+Mergesort algorithm ended in: 1.3949430270004086 seconds
+
+Run 2:
+Mergesort algorithm ended in: 1.388562039000135 seconds
+
+Run 3:
+Mergesort algorithm ended in: 1.4042496510001001 seconds
+
+Run 4:
+Mergesort algorithm ended in: 1.521478431000105 seconds
+
+Run 5:
+Mergesort algorithm ended in: 1.741739136000433 seconds
+
+Run 6:
+Mergesort algorithm ended in: 1.4116628379997564 seconds
+
+Run 7:
+Mergesort algorithm ended in: 1.387373012000353 seconds
+
+Run 8:
+Mergesort algorithm ended in: 1.3800168420002592 seconds
+
+Run 9:
+Mergesort algorithm ended in: 1.3831525979994694 seconds
+
+Run 10:
+Mergesort algorithm ended in: 1.3931164039995565 seconds
+

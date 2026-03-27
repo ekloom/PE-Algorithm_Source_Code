@@ -1,0 +1,28 @@
+C:\Users\elija\Desktop\School\Mergesort\bin\Debug\net8.0\Mergesort.exe
+C:\Users\elija\Desktop\School\Mergesort\bin\Debug\net8.0\Mergesort.deps.json
+C:\Users\elija\Desktop\School\Mergesort\bin\Debug\net8.0\Mergesort.runtimeconfig.json
+C:\Users\elija\Desktop\School\Mergesort\bin\Debug\net8.0\Mergesort.dll
+C:\Users\elija\Desktop\School\Mergesort\bin\Debug\net8.0\Mergesort.pdb
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\Mergesort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\Mergesort.AssemblyInfoInputs.cache
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\Mergesort.AssemblyInfo.cs
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\Mergesort.csproj.CoreCompileInputs.cache
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\Mergesort.dll
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\refint\Mergesort.dll
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\Mergesort.pdb
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\Mergesort.genruntimeconfig.cache
+C:\Users\elija\Desktop\School\Mergesort\obj\Debug\net8.0\ref\Mergesort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\bin\Debug\net8.0\Mergesort.exe
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\bin\Debug\net8.0\Mergesort.deps.json
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\bin\Debug\net8.0\Mergesort.runtimeconfig.json
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\bin\Debug\net8.0\Mergesort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\bin\Debug\net8.0\Mergesort.pdb
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\Mergesort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\Mergesort.AssemblyInfoInputs.cache
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\Mergesort.AssemblyInfo.cs
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\Mergesort.csproj.CoreCompileInputs.cache
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\Mergesort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\refint\Mergesort.dll
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\Mergesort.pdb
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\Mergesort.genruntimeconfig.cache
+C:\Users\elija\OneDrive\Desktop (Onedrive)\Career\Performance Efficiency Project\Algoritme source code\Prototype algorithm\Mergesort\obj\Debug\net8.0\ref\Mergesort.dll

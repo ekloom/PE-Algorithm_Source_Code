@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elija\\Desktop\\School\\NumberDataGenerator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B4B3C12-9935-4B2E-86F9-1FDF1653E95A}|..\\Quicksort\\Quicksort.csproj|c:\\users\\elija\\desktop\\school\\quicksort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{847D6602-D644-4909-8A6C-35B14C8DE7F4}|..\\Mergesort\\Mergesort.csproj|c:\\users\\elija\\desktop\\school\\mergesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 227,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Desktop\\School\\Quicksort\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Quicksort\\Program.cs",
+              "ToolTip": "C:\\Users\\elija\\Desktop\\School\\Quicksort\\Program.cs",
+              "RelativeToolTip": "..\\Quicksort\\Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T15:16:01.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Desktop\\School\\Mergesort\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Mergesort\\Program.cs",
+              "ToolTip": "C:\\Users\\elija\\Desktop\\School\\Mergesort\\Program.cs",
+              "RelativeToolTip": "..\\Mergesort\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T20:31:01.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
