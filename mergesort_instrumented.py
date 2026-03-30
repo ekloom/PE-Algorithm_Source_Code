@@ -81,7 +81,10 @@ def mergesort(arr):
 # print(len(arr))
 # Meting start hier
 
+start = time.perf_counter()
 mergesort(arr)
+end = time.perf_counter()
 
+print("Mergesort algorithm ended in: {0} seconds".format(end - start))
 # print(f"results: {' '.join(map(str,arr))}")
 

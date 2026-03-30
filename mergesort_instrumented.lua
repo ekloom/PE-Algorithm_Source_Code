@@ -96,7 +96,9 @@ function arrayToString(arr)
 end
 ]]
 
+local start = os.clock()
 mergesort(arr)
-
+local end_time = os.clock()
+print("Mergesort algorithm ended in: " .. end_time - start .. " seconds")
 -- print("algorithm ended in: " .. end_time - start .. " seconds")
 -- print("Results: ", arrayToString(arr))

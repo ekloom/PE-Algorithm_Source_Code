@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mergesort")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b9997fdd617b5047fc48cb55724fa59565ddbb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mergesort")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mergesort")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

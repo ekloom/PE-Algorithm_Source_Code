@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-# Output directory for results
 OUTPUT_DIR="benchmark_results"
-RUNS=10
+WARMUP_RUNS=100
+RUNS=50
+SUMMARY_CSV="$OUTPUT_DIR/benchmark_summary.csv"
+
 mkdir -p "$OUTPUT_DIR"
 
-# Define dataset variants for each category as a space-separated string
 declare -A dataset_types
 dataset_types["Sorted"]="Sorted_10K Sorted_50K Sorted_100K Sorted_500K Sorted_1M"
 dataset_types["ReverseSorted"]="Reverse_10K Reverse_50K Reverse_100K Reverse_500K Reverse_1M"
@@ -13,69 +14,228 @@ dataset_types["NearlySorted"]="NearlySorted_10K NearlySorted_50K NearlySorted_10
 dataset_types["UniformSorted"]="Uniform_10K Uniform_50K Uniform_100K Uniform_500K Uniform_1M"
 dataset_types["FewUnique"]="FewUnique_10K FewUnique_50K FewUnique_100K FewUnique_500K FewUnique_1M"
 
-# Function to run the test
-run_test () {
+init_summary_csv() {
+    if [ ! -f "$SUMMARY_CSV" ]; then
+        echo "language,algorithm,dataset_type,variant,mean_seconds,stddev_seconds,min_seconds,max_seconds,peak_memory_kb,runs,warmup_runs" > "$SUMMARY_CSV"
+    fi
+}
+
+get_script_name() {
+    local language=$1
+    local algorithm=$2
+    local mode=$3
+
+    if [ "$mode" = "benchmark" ]; then
+        if [ "$language" = "python" ]; then
+            echo "${algorithm}.py"
+        else
+            echo "${algorithm}.lua"
+        fi
+    else
+        if [ "$language" = "python" ]; then
+            echo "${algorithm}_instrumented.py"
+        else
+            echo "${algorithm}_instrumented.lua"
+        fi
+    fi
+}
+
+get_command() {
+    local language=$1
+    local algorithm=$2
+    local file=$3
+    local mode=$4
+    local script
+
+    script=$(get_script_name "$language" "$algorithm" "$mode")
+
+    if [ "$language" = "python" ]; then
+        echo "python3 ${script} < \"$file\""
+    else
+        echo "lua ${script} < \"$file\""
+    fi
+}
+
+measure_peak_memory() {
+    local language=$1
+    local algorithm=$2
+    local file=$3
+    local mode=$4
+    local cmd
+
+    cmd=$(get_command "$language" "$algorithm" "$file" "$mode")
+    /usr/bin/time -f "%M" bash -c "$cmd" 2>&1 >/dev/null
+}
+
+append_benchmark_csv_row() {
+    local json_file=$1
+    local language=$2
+    local algorithm=$3
+    local dataset_type=$4
+    local variant=$5
+    local peak_mem=$6
+
+    python3 - "$json_file" "$SUMMARY_CSV" "$language" "$algorithm" "$dataset_type" "$variant" "$peak_mem" "$RUNS" "$WARMUP_RUNS" <<'PY'
+import csv
+import json
+import sys
+
+json_file = sys.argv[1]
+summary_csv = sys.argv[2]
+language = sys.argv[3]
+algorithm = sys.argv[4]
+dataset_type = sys.argv[5]
+variant = sys.argv[6]
+peak_mem = sys.argv[7]
+runs = sys.argv[8]
+warmup_runs = sys.argv[9]
+
+with open(json_file, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+result = data["results"][0]
+
+row = [
+    language,
+    algorithm,
+    dataset_type,
+    variant,
+    result["mean"],
+    result["stddev"],
+    result["min"],
+    result["max"],
+    peak_mem,
+    runs,
+    warmup_runs,
+]
+
+with open(summary_csv, "a", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(row)
+PY
+}
+
+run_benchmark() {
     local language=$1
     local dataset_type=$2
     local algorithm=$3
-    output_file="$OUTPUT_DIR/${language}_${algorithm}_${dataset_type}_results.txt"
 
-    # Initialize the output file
-    echo "Benchmark results for $language - $algorithm - $dataset_type" > "$output_file"
-    echo "=========================================" >> "$output_file"
-    
-    # Loop through dataset variants for the selected type
+    init_summary_csv
+
     for variant in ${dataset_types[$dataset_type]}; do
-      file="Data/$variant.txt"
-      
-        if [ "$language" == "python" ]; then
-		# Capture peak memory using /usr/bin/time
-		peak_mem=$(/usr/bin/time -f "%M" python3 "$algorithm.py" < "$file" 2>&1 >/dev/null)
-		elif [ "$language" == "lua" ]; then
-    # Capture peak memory using /usr/bin/time
-                peak_mem=$(/usr/bin/time -f "%M" lua "$algorithm.lua" < "$file" 2>&1 >/dev/null)
+        local file="Data/${variant}.txt"
+        local json_file="$OUTPUT_DIR/${language}_${algorithm}_${variant}.json"
+        local peak_mem
+        local cmd
+
+        if [ ! -f "$file" ]; then
+            echo "Error: missing file: $file" >&2
+            exit 1
         fi
 
-    {
-        echo "===== $dataset_type | $variant ====="
-        echo "Peak Memory: ${peak_mem} KB"
-    } >> "$output_file"
+        cmd=$(get_command "$language" "$algorithm" "$file" "benchmark")
+        peak_mem=$(measure_peak_memory "$language" "$algorithm" "$file" "benchmark")
 
+        echo "Benchmarking $language | $algorithm | $variant"
 
-    
-        for ((i=1; i<=RUNS; i++)); do
-       
-  if [ "$language" == "python" ]; then
-    run_output=$(python3 "$algorithm.py" < "$file")
-    echo "Python output for $variant, Run $i: $run_output"
-  elif [ "$language" == "lua" ]; then
-    run_output=$(lua "$algorithm.lua" < "$file")
-     echo "Lua output for $variant, Run $i: $run_output"
-  fi
+        hyperfine \
+            --warmup "$WARMUP_RUNS" \
+            --runs "$RUNS" \
+            --export-json "$json_file" \
+            "$cmd"
 
-  # Write results to the output file (including both python and lua output)
-  {
-    echo "Run $i:"
-    echo "$run_output"
-    echo ""
-  } >> "$output_file"
-done
+        append_benchmark_csv_row "$json_file" "$language" "$algorithm" "$dataset_type" "$variant" "$peak_mem"
+
+        echo "Saved summary row for $language | $algorithm | $variant"
     done
 }
 
-# Select language
+run_instrumented() {
+    local language=$1
+    local dataset_type=$2
+    local algorithm=$3
+
+    for variant in ${dataset_types[$dataset_type]}; do
+        local file="Data/${variant}.txt"
+        local txt_file="$OUTPUT_DIR/${language}_${algorithm}_${variant}_instrumented.txt"
+        local cmd
+
+        if [ ! -f "$file" ]; then
+            echo "Error: missing file: $file" >&2
+            exit 1
+        fi
+
+        cmd=$(get_command "$language" "$algorithm" "$file" "instrumented")
+
+        echo "Instrumented run: $language | $algorithm | $variant" > "$txt_file"
+
+        for ((i=1; i<=RUNS; i++)); do
+            echo "Run $i:" >> "$txt_file"
+            bash -c "$cmd" >> "$txt_file"
+            echo "" >> "$txt_file"
+        done
+
+        echo "Saved: $txt_file"
+    done
+}
+
+run_for_selection() {
+    local target=$1
+    local mode=$2
+    local dataset_type=$3
+    local algorithm=$4
+
+    case "$target" in
+        python)
+            if [ "$mode" = "benchmark" ]; then
+                run_benchmark "python" "$dataset_type" "$algorithm"
+            else
+                run_instrumented "python" "$dataset_type" "$algorithm"
+            fi
+            ;;
+        lua)
+            if [ "$mode" = "benchmark" ]; then
+                run_benchmark "lua" "$dataset_type" "$algorithm"
+            else
+                run_instrumented "lua" "$dataset_type" "$algorithm"
+            fi
+            ;;
+        both)
+            if [ "$mode" = "benchmark" ]; then
+                run_benchmark "python" "$dataset_type" "$algorithm"
+                run_benchmark "lua" "$dataset_type" "$algorithm"
+            else
+                run_instrumented "python" "$dataset_type" "$algorithm"
+                run_instrumented "lua" "$dataset_type" "$algorithm"
+            fi
+            ;;
+    esac
+}
+
+echo "Choose mode:"
+echo "1) Benchmark (hyperfine + peak memory, uses normal files)"
+echo "2) Instrumented (internal algorithm timings, uses instrumented files)"
+read -rp "Enter choice (1 or 2): " mode_choice
+
+case "$mode_choice" in
+    1) mode="benchmark" ;;
+    2) mode="instrumented" ;;
+    *) echo "Invalid mode choice"; exit 1 ;;
+esac
+
 echo "Choose language:"
 echo "1) Python"
 echo "2) Lua"
-read -rp "Enter choice (1 or 2): " lang_choice
+echo "3) Both (sequential, not parallel)"
+read -rp "Enter choice (1 to 3): " lang_choice
 
 case "$lang_choice" in
-    1) language="python" ;;
-    2) language="lua" ;;
+    1) target="python" ;;
+    2) target="lua" ;;
+    3) target="both" ;;
     *) echo "Invalid language choice"; exit 1 ;;
 esac
 
-# Select dataset variant
 echo "Choose dataset type:"
 echo "1) Sorted"
 echo "2) ReverseSorted"
@@ -93,7 +253,6 @@ case "$data_choice" in
     *) echo "Invalid dataset choice"; exit 1 ;;
 esac
 
-# Select sorting algorithm
 echo "Choose sorting algorithm:"
 echo "1) Mergesort"
 echo "2) Quicksort"
@@ -105,8 +264,6 @@ case "$algo_choice" in
     *) echo "Invalid algorithm choice"; exit 1 ;;
 esac
 
-# Run the benchmark for the selected options
-run_test "$language" "$dataset_type" "$algorithm"
+run_for_selection "$target" "$mode" "$dataset_type" "$algorithm"
 
-# Finished message
-echo "Benchmark completed for '$language' with the algorithm '$algorithm' of dataset_type '$dataset_type'. Results saved in $OUTPUT_DIR as '$output_file' "
+echo "Done. Results saved in $OUTPUT_DIR/"

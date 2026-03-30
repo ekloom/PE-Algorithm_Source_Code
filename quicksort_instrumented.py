@@ -49,6 +49,9 @@ def quicksort(arr, low, high):
 
 # print(len(arr))
 # Meting start hier
-
+start = time.perf_counter()
 quicksort(arr, 0, len(arr) - 1)
+end = time.perf_counter()
+
+print("Quicksort algorithm ended in: {0} seconds".format(end - start))
 # print(f"results: {' '.join(map(str,arr))}")

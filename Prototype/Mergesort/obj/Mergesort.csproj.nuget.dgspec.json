@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Mergesort\\Mergesort.csproj": {}
+    "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Mergesort\\Mergesort.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Mergesort\\Mergesort.csproj": {
+    "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Mergesort\\Mergesort.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Mergesort\\Mergesort.csproj",
+        "projectUniqueName": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Mergesort\\Mergesort.csproj",
         "projectName": "Mergesort",
-        "projectPath": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Mergesort\\Mergesort.csproj",
+        "projectPath": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Mergesort\\Mergesort.csproj",
         "packagesPath": "C:\\Users\\elija\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Mergesort\\obj\\",
+        "outputPath": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Mergesort\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

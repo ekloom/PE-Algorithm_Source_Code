@@ -58,5 +58,9 @@ function arrayToString(arr)
 	return table.concat(result, " ")
 end
 ]]
+
+local start = os.clock()
 quicksort(arr, 1, #arr)
+local end_time = os.clock()
+print("Quicksort algorithm ended in: " .. end_time - start .. " seconds")
 -- print("Results: ", arrayToString(arr))

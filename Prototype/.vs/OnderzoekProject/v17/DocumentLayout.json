@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\",
+  "WorkspaceRootPath": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C6DEB8E-FB90-ACBF-23BE-C61CCC1597A0}|Quicksort\\Quicksort.csproj|c:\\users\\elija\\onedrive\\desktop (onedrive)\\career\\performance efficiency project\\algoritme source code\\prototype algorithm\\quicksort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C6DEB8E-FB90-ACBF-23BE-C61CCC1597A0}|Quicksort\\Quicksort.csproj|d:\\projects\\school\\pe-algorithm_source_code\\prototype\\quicksort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C6DEB8E-FB90-ACBF-23BE-C61CCC1597A0}|Quicksort\\Quicksort.csproj|solutionrelative:quicksort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05A0F146-78E6-F86D-7027-046CB84201C9}|Mergesort\\Mergesort.csproj|c:\\users\\elija\\onedrive\\desktop (onedrive)\\career\\performance efficiency project\\algoritme source code\\prototype algorithm\\mergesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05A0F146-78E6-F86D-7027-046CB84201C9}|Mergesort\\Mergesort.csproj|d:\\projects\\school\\pe-algorithm_source_code\\prototype\\mergesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05A0F146-78E6-F86D-7027-046CB84201C9}|Mergesort\\Mergesort.csproj|solutionrelative:mergesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,24 +24,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Mergesort\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Mergesort\\Program.cs",
               "RelativeDocumentMoniker": "Mergesort\\Program.cs",
-              "ToolTip": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Mergesort\\Program.cs",
+              "ToolTip": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Mergesort\\Program.cs",
               "RelativeToolTip": "Mergesort\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T11:28:51.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-27T11:28:51.337Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Quicksort\\Program.cs",
+              "DocumentMoniker": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Quicksort\\Program.cs",
               "RelativeDocumentMoniker": "Quicksort\\Program.cs",
-              "ToolTip": "C:\\Users\\elija\\OneDrive\\Desktop (Onedrive)\\Career\\Performance Efficiency Project\\Algoritme source code\\Prototype algorithm\\Quicksort\\Program.cs",
+              "ToolTip": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\Prototype\\Quicksort\\Program.cs",
               "RelativeToolTip": "Quicksort\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-27T11:28:37.731Z",
               "EditorCaption": ""
