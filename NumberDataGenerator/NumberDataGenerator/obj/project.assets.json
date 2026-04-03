@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\School\\PE-Alorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\NumberDataGenerator.csproj",
+      "projectUniqueName": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\NumberDataGenerator.csproj",
       "projectName": "NumberDataGenerator",
-      "projectPath": "D:\\Projects\\School\\PE-Alorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\NumberDataGenerator.csproj",
+      "projectPath": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\NumberDataGenerator.csproj",
       "packagesPath": "C:\\Users\\elija\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\School\\PE-Alorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\obj\\",
+      "outputPath": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

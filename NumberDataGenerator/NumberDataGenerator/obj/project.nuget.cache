@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EKX2KSsVoP0=",
+  "dgSpecHash": "7WTXvIlGWrU=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\School\\PE-Alorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\NumberDataGenerator.csproj",
+  "projectFilePath": "D:\\Projects\\School\\PE-Algorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\NumberDataGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elija\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
     "C:\\Users\\elija\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",

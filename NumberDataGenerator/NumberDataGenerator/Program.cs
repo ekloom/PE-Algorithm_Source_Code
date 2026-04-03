@@ -26,9 +26,8 @@ internal class Program
             SaveDataset(basePath, $"Reverse_{sizeLabel}.txt", GenerateReverseSorted(n));
 
             // Om dubbele waarden te voorkomen gebruiken we n*10 zodat de range in verschillende waardes groter zijn dan het aantal waardes dat 
-            // verwerkt wodt
+
             SaveDataset(basePath, $"Uniform_{sizeLabel}.txt", GenerateUniformRandom(n, 0, n * 10, rng));
-            SaveDataset(basePath, $"FewUnique_{sizeLabel}.txt", GenerateFewUnique(n, 10, rng));
             SaveDataset(basePath, $"NearlySorted_{sizeLabel}.txt", GenerateNearlySorted(n, n / 100, rng));
         }
     }
@@ -59,14 +58,6 @@ internal class Program
         List<int> data = new(n);
         for (int i = 0; i < n; i++)
             data.Add(rng.Next(min, max));
-        return data;
-    }
-
-    static List<int> GenerateFewUnique(int n, int uniqueCount, Random rng)
-    {
-        List<int> data = new(n);
-        for (int i = 0; i < n; i++)
-            data.Add(rng.Next(0, uniqueCount));
         return data;
     }
 

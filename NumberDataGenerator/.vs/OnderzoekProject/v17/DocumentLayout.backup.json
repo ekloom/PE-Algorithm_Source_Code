@@ -1,12 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\elija\\Desktop\\School\\NumberDataGenerator\\",
+  "WorkspaceRootPath": "D:\\Projects\\School\\PE-Alorithm_Source_Code\\NumberDataGenerator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B4B3C12-9935-4B2E-86F9-1FDF1653E95A}|..\\Quicksort\\Quicksort.csproj|c:\\users\\elija\\desktop\\school\\quicksort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C37D9224-2318-086C-CE02-88AB315B979A}|NumberDataGenerator\\NumberDataGenerator.csproj|d:\\projects\\school\\pe-alorithm_source_code\\numberdatagenerator\\numberdatagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37D9224-2318-086C-CE02-88AB315B979A}|NumberDataGenerator\\NumberDataGenerator.csproj|solutionrelative:numberdatagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{847D6602-D644-4909-8A6C-35B14C8DE7F4}|..\\Mergesort\\Mergesort.csproj|c:\\users\\elija\\desktop\\school\\mergesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\elija\\Desktop\\School\\Quicksort\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\elija\\Desktop\\School\\Mergesort\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,27 +26,33 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\Desktop\\School\\Quicksort\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Quicksort\\Program.cs",
-              "ToolTip": "C:\\Users\\elija\\Desktop\\School\\Quicksort\\Program.cs",
-              "RelativeToolTip": "..\\Quicksort\\Program.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwE4AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Projects\\School\\PE-Alorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\Program.cs",
+              "RelativeDocumentMoniker": "NumberDataGenerator\\Program.cs",
+              "ToolTip": "D:\\Projects\\School\\PE-Alorithm_Source_Code\\NumberDataGenerator\\NumberDataGenerator\\Program.cs",
+              "RelativeToolTip": "NumberDataGenerator\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T15:16:01.729Z",
+              "WhenOpened": "2026-03-27T12:43:39.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Desktop\\School\\Quicksort\\Program.cs",
+              "ToolTip": "C:\\Users\\elija\\Desktop\\School\\Quicksort\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T15:16:01.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\elija\\Desktop\\School\\Mergesort\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Mergesort\\Program.cs",
               "ToolTip": "C:\\Users\\elija\\Desktop\\School\\Mergesort\\Program.cs",
-              "RelativeToolTip": "..\\Mergesort\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:31:01.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T20:31:01.688Z"
             }
           ]
         }

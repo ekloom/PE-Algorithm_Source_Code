@@ -138,15 +138,18 @@ run_benchmark() {
 
         echo "Benchmarking $language | $algorithm | $variant"
 
-        hyperfine \
-            --warmup "$WARMUP_RUNS" \
-            --runs "$RUNS" \
-            --export-json "$json_file" \
-            "$cmd"
-
-        append_benchmark_csv_row "$json_file" "$language" "$algorithm" "$dataset_type" "$variant" "$peak_mem"
-
-        echo "Saved summary row for $language | $algorithm | $variant"
+if hyperfine \
+    --warmup "$WARMUP_RUNS" \
+    --runs "$RUNS" \
+    --export-json "$json_file" \
+    "$cmd"
+then
+    append_benchmark_csv_row "$json_file" "$language" "$algorithm" "$dataset_type" "$variant" "$peak_mem"
+    echo "Saved summary row for $language | $algorithm | $variant"
+else
+    echo "Error: benchmark failed for $language | $algorithm | $variant" >&2
+    exit 1
+fi
     done
 }
 
@@ -168,6 +171,10 @@ run_instrumented() {
         cmd=$(get_command "$language" "$algorithm" "$file" "instrumented")
 
         echo "Instrumented run: $language | $algorithm | $variant" > "$txt_file"
+
+        for ((i=1; i<=WARMUP_RUNS; i++)); do
+            bash -c "$cmd" >/dev/null
+        done
 
         for ((i=1; i<=RUNS; i++)); do
             echo "Run $i:" >> "$txt_file"
